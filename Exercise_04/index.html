@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Number Base</title>
+<!-- Latest compiled and minifield CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<!-- Calling JavaScript -->
+<script type="text/javascript" src=numberbase.js ></script>
+<!--  Calling CSS -->
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class = 'container'>
+		<div class = 'row'>
+			<h2 align="center">Number Base Converter</h2>
+		</div>
+		
+		<div class = 'row' align="center">
+			<span>Enter an integer number</span>
+			<br><br>
+			<input type='number' id='textfieldInput' placeholder="Integer Number">
+			<button type="button" onClick="convertNumBase()" title="Convert">Convert</button>
+		</div>
+		
+		<div class = 'row'>
+			<div class="col-lg-6 col" align="center">
+				<div class="form-group">
+  					<label for="textArea1">Base Two</label>
+  						<br>
+  					<textarea class="textAreaClass" id="textarea1" rows="1" disabled="disabled"></textarea>
+				</div>
+			</div>
+			
+			<div class="col-lg-6 col" align="center">
+				<div class="form-group">
+  					<label for="textArea2">Base Five</label>
+  						<br>
+  					<textarea class="textAreaClass" id="textarea2" rows="1" disabled="disabled"></textarea>
+				</div>
+			</div>
+		</div>
+		
+		<div class = 'row'>
+			<div class="col-lg-6 col" align="center">
+				<div class="form-group">
+  					<label for="textArea3">Base Eight</label>
+  						<br>
+  					<textarea class="textAreaClass" id="textarea3" rows="1" disabled="disabled"></textarea>
+				</div>
+			</div>
+			
+			<div class="col-lg-6 col" align="center">
+				<div class="form-group">
+  					<label for="textArea4">Base Sixteen</label>
+  						<br>
+  					<textarea class="textAreaClass" id="textarea4" rows="1" disabled="disabled"></textarea>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
