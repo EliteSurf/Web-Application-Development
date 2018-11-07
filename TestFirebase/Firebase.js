@@ -51,6 +51,11 @@ function save_user() {
 	var matrics_no = document.getElementById('matrics_no').value;
 	var user_course = document.getElementById('user_course').value;
 	
+	if(user_name.trim() == '' || matrics_no.trim() == '' || user_course.trim() == '') {
+		alert("Incomplete Information");
+		return false;
+	}
+	
 	// Set variable reference name in Firebase
 	var data = {
 		Name: user_name,
