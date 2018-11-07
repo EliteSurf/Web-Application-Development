@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Test Firebase</title>
+	<!-- Bootstrap -->
+	<link rel="stylesheet" type="text/css" 
+		href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<!-- Firebase -->
+	<script src="https://www.gstatic.com/firebasejs/5.5.7/firebase.js"></script>
+	<!-- CSS -->
+	<link rel="stylesheet" href="Style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="row" align="center">
+			<h1>Test User Data</h1>
+		</div>
+		
+		<div class="row">
+			<form action="Firebase.js" method="POST">
+			
+				<div class="col-lg-4 col" align="center">
+					<div class="control-group">
+						<label class="control-label" for username>User Name</label>
+						<div class="controls">
+							<input type="text" name="username" class="form-control" 
+								id="user_name" placeholder="Name" required>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-lg-4 col" align="center">
+					<div class="control-group">
+						<label class="control-label" for matrics>Matrics No</label>
+						<div class="controls">
+							<input type="number" name="matrics" class="form-control" 
+								id="matrics_no" placeholder="Matrics" required>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-lg-4 col" align="center">
+					<div class="control-group">
+						<label class="control-label" for course>Course</label>
+						<div class="controls">
+							<input type="text" name="course" class="form-control" 
+								id="user_course" placeholder="Course" required>
+						</div>
+					</div>
+				</div>
+			
+			</form>
+		</div>
+		
+		<div class="row">
+			<div class="col-lg-3 col" align="center"></div>
+			
+			<div class="col-lg-2 col" align="center">
+				<input class="Button" type="button" value="Save" onclick="save_user();" />
+			</div>
+			
+			<div class="col-lg-2 col" align="center">
+				<input class="Button" type="button" value="Update" onclick="update_user();" />
+			</div>
+			
+			<div class="col-lg-2 col" align="center">
+				<input class="Button" type="button" value="Delete" onclick="delete_user();" />
+			</div>
+			
+			<div class="col-lg-3 col" align="center"></div>
+		</div>
+		
+		<div class="row">
+			<table class="table table-hover" id="tableUsersList">
+				<tr>
+		   			<th>NO</th>
+		   			<th>NAME</th>
+		   			<th>MATRICS</th>
+		   			<th>COURSE</th>
+		  		</tr>
+			</table>
+		</div>
+		
+	</div>
+ 
+ 	<script type="text/javascript" src="Firebase.js"></script>
+</body>
+</html>

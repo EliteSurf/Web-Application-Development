@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+body {
+	background-color: orange;
+}
+
+div {
+	margin-bottom: 10px;
+}
+
+.control-label {
+	font-size: large;
+}
+
+.form-control {
+	background-color: yellow;
+	font-size: large;
+}
+
+.Button {
+	color: yellow;
+	background: black;
+	border: medium;
+	border-color: white;
+	border-radius: 14px;
+	text-align: center;
+	font-size: 24px;
+	width: 75%;
+	height: 50px;
+	cursor: progress;
+	opacity: 0.7;
+  	transition: 0.5s;
+  	display: inline-block;
+}
+
+.Button:hover {
+	opacity: 1;
+}
+
+
+table, th, td {
+    border: 2px solid black;
+    font-size: large;
+}
