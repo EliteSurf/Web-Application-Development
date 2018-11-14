@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src=Scripts.js></script>
+    <link rel="stylesheet" type="text/css" href="Styles.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="row">
+        <h1 id="Index_H1">Welcome to My System</h1>
+    </div>
+
+    <div class="container" align="center">
+        <img src=" ">
+        <div class="row">
+            <button class="index_btn" onclick="document.getElementById('Index_Model_SignIn').style.display='block'"
+                    style="width:auto;">Sign In</button>
+            <button class="index_btn" onclick="document.getElementById('Index_Model_SignUp').style.display='block'"
+                    style="width:auto;">Sign Up</button>
+        </div>
+    </div>
+
+    <!-- Model for Sign In -->
+    <div id="Index_Model_SignIn" class="modal">
+        <!-- Action PHP -->
+        <form class="modal-content animate" action="">
+            <!-- Upper Part -->
+            <div class="imgcontainer">
+                <!-- X close model icon -->
+                <span onclick="document.getElementById('Index_Model_SignIn').style.display='none'" class="close"
+                      title="Close">&times;</span>
+                <img src="" alt=" " class=" ">
+            </div>
+            <!-- Middle Input Part -->
+            <div class="container">
+                <label for="signin_username"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="username" id="signin_username" required>
+                <br>
+                <label for="signin_password"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="password" id="signin_password" required>
+                <br>
+                <label><b>Role</b></label>
+                <br>
+                <input type="radio" class="modalRadioGroup" name="role" value="admin"> Admin
+                <input type="radio" class="modalRadioGroup" name="role" value="user"> User
+            </div>
+            <!-- Bottom Button Part -->
+            <div class="container" style="background-color:aquamarine" align="center">
+                <button class="Index_Sign_Button" type="submit">Sign In</button>
+                <button class="Index_Cancel_Button" type="button"
+                        onclick="document.getElementById('Index_Model_SignIn').style.display='none'">Cancel</button>
+                <!--
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+                <span class="psw">Forgot <a href="#">password?</a></span>
+                -->
+            </div>
+        </form>
+    </div>
+
+    <!-- Model for Sign Up -->
+    <div id="Index_Model_SignUp" class="modal">
+        <!-- Action PHP -->
+        <form class="modal-content animate" action="">
+            <div class="imgcontainer">
+                <!-- X close model icon -->
+                <span onclick="document.getElementById('Index_Model_SignUp').style.display='none'" class="close"
+                      title="Close">&times;</span>
+            </div>
+
+            <div class="container">
+                <label for="signin_username"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="username" id="signup_username" required>
+
+                <label for="signin_password"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="password" id="signup_password" required>
+
+                <label for="info1"><b>Info 1</b></label>
+                <input type="text" placeholder="" name="p" id="info1" required>
+
+                <label for="info2"><b>Info 2</b></label>
+                <input type="text" placeholder="" name="" id="info2" required>
+
+                <label for="info3"><b>Info 3</b></label>
+                <br>
+                <select name="info3" id="info3">
+                    <option value="item1">Item 1</option>
+                    <option value="item2">Item 2</option>
+                    <option value="item3">Item 3</option>
+                    <option value="item4">Item 4</option>
+                    <option value="item5">Item 5</option>
+                </select>
+            </div>
+
+            <div class="container" style="background-color:aquamarine" align="center">
+                <button class="Index_Sign_Button" type="submit">Sign Up</button>
+                <button class="Index_Cancel_Button" type="button"
+                        onclick="document.getElementById('Index_Model_SignUp').style.display='none'">Cancel</button>
+            </div>
+
+        </form>
+    </div>
+
+</body>
+</html>
