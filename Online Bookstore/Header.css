@@ -1,0 +1,36 @@
+<style>
+	#background {
+		background-image: url("http://eksentrika.com/wp-content/uploads/2018/08/2nd-slider-bg.jpg");
+		opacity: 0.5;
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-repeat: no-repeat;
+		background-size: cover;
+		z-index: -1;
+	}
+	h1 {
+		background-color: darkslateblue;
+		color: thistle;
+		padding: 30px;
+		margin: auto;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	h2 {
+		text-align: center;
+	}
+	ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		background-color: #333;
+	}
+	li {
+		float: left;
+	}
+</style>
